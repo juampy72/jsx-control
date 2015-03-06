@@ -22,7 +22,7 @@ turns into...
 }.call(this)}
 ```
 
-The <If> body must return a single JSX root element. You can even nest!
+The \<If\> body must return a single JSX root element. You can even nest!
 
 ```
 <If condition={this.props.banner}>
@@ -79,5 +79,5 @@ require('node-jsx').install({
 
 ## Thanks!
 to [valtech-au/jsx-control-statements](https://github.com/valtech-au/jsx-control-statements) for the inspiration! This
-module is slightly different in that it eschews <Else> in favour of nested <Ifs>, as well as constructing the statements
+module is slightly different in that it eschews \<Else\> in favour of nested \<Ifs\>, as well as constructing the statements
 slightly differently.

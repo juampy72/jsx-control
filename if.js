@@ -37,7 +37,7 @@ function visitJSXOpeningElement(traverse, object, path, state) {
   'if (', state);
   utils.move(condition.value.expression.range[0], state);
   utils.catchup(condition.value.expression.range[1], state);
-  utils.append(')  return (', state);
+  utils.append(') { return (', state);
   utils.move(object.range[1], state);
 }
 visitJSXOpeningElement.test = function(object, path, state) {
@@ -46,7 +46,7 @@ visitJSXOpeningElement.test = function(object, path, state) {
 
 function visitJSXClosingElement(traverse, object, path, state) {
   utils.move(object.range[1], state);
-  utils.append(')' +
+  utils.append('); }' +
     '}.call(this)}', state);
 }
 visitJSXClosingElement.test = function(object, path, state) {

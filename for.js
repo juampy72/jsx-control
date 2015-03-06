@@ -50,7 +50,7 @@ visitJSXOpeningElement.test = function(object, path, state) {
 
 function visitJSXClosingElement(traverse, object, path, state) {
   utils.move(object.range[1], state);
-  utils.append(')}, this)}', state);
+  utils.append(');}, this)}', state);
 }
 visitJSXClosingElement.test = function(object, path, state) {
   return (object.type === 'JSXClosingElement' && object.name && object.name.name === 'For');

@@ -1,6 +1,6 @@
 # JSX Control
 
-A JSTransform that adds syntactical sugar that turns <If> and <For> elements into control statements.
+A JSTransform that adds syntactical sugar that turns \<If\> and \<For\> elements into control statements.
 
 ## Usage
 
@@ -62,7 +62,7 @@ this.props.fruits.map(function(fruit) { return (
 A visitorList is available through ``jsx-control/visitors```, which can be used in conjunction with [JSTransform Loader](https://github.com/conradz/jstransform-loader).
 
 ### Browserify
-Include 'jsx-control/browserify'
+Include 'jsx-control/browserify' in your ```transform``` array
 
 ### node-jsx
 The transform can be added during the install function of node-jsx

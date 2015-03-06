@@ -16,7 +16,7 @@ browserify.configure = function (opts) {
 
     var end = function () {
       try {
-        var out = jsTransform.transform(visitors, data).code;
+        var out = jsTransform.transform(visitors.visitorList, data).code;
       }
       catch(err) {
         stream.emit("error", err);

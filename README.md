@@ -4,7 +4,7 @@ A JSTransform that adds syntactical sugar that turns <If> and <For> elements int
 
 ## Usage
 
-## If
+### If
 
 ```
 <If condition={this.props.banner}>
@@ -36,7 +36,7 @@ The <If> body must return a single JSX root element. You can even nest!
 ```
 
 
-## For Tag
+### For
 
 ```
 <For each="fruit" of={this.props.fruits}>
@@ -76,3 +76,8 @@ require('node-jsx').install({
   }
 });
 ```
+
+## Thanks!
+to [valtech-au/jsx-control-statements](https://github.com/valtech-au/jsx-control-statements) for the inspiration! This
+module is slightly different in that it eschews <Else> in favour of nested <Ifs>, as well as constructing the statements
+slightly differently.

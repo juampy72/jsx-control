@@ -1,6 +1,6 @@
 {
   "name": "jsx-control",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Neater control statements (if/for) for JSX",
   "author": {
     "name": "Sally Young",

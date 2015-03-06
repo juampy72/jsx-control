@@ -1,0 +1,30 @@
+{
+  "name": "jsx-control",
+  "version": "1.0.0",
+  "description": "Neater control statements (if/for) for JSX",
+  "author": {
+    "name": "Sally Young",
+    "email": "sally@justafish.co.uk"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justafish/jsx-control"
+  },
+  "bugs": {
+    "url": "https://github.com/justafish/jsx-control/issues"
+  },
+  "keywords": [
+    "react",
+    "jsx",
+    "if",
+    "for",
+    "loop"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jstransform": "^10.0.1",
+    "through": "^2.3.6"
+  },
+  "devDependencies": {}
+}

@@ -59,7 +59,7 @@ this.props.fruits.map(function(fruit) { return (
 ```
 
 ### Webpack
-A visitorList is available through ``jsx-control/visitors```, which can be used in conjunction with [JSTransform Loader](https://github.com/conradz/jstransform-loader).
+A visitorList is available through ``jsx-control/visitors``, which can be used in conjunction with [JSTransform Loader](https://github.com/conradz/jstransform-loader).
 
 ### Browserify
 Include 'jsx-control/browserify' in your ```transform``` array

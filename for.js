@@ -57,11 +57,11 @@ visitJSXClosingElement.test = function(object, path, state) {
 }
 
 function throwMissingAttr() {
-  throw new Error("<If> tag with no 'each' or 'of' attribute");
+  throw new Error("<For> tag with no 'each' or 'of' attribute");
 }
 
 function throwMultipleRootElement() {
-  throw new Error("<If> tag must only contain a single root element");
+  throw new Error("<For> tag must only contain a single root element");
 }
 
 module.exports = [visitJSXOpeningElement, visitJSXClosingElement, visitJSXElement];

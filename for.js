@@ -41,7 +41,7 @@ function visitJSXOpeningElement(traverse, object, path, state) {
   utils.append('.map(function(', state);
   utils.move(eachCondition.value.range[0] + 1, state);
   utils.catchup(eachCondition.value.range[1] - 1, state);
-  utils.append(') { return (', state);
+  utils.append(', i) { return (', state);
   utils.move(object.range[1], state);
 }
 visitJSXOpeningElement.test = function(object, path, state) {

@@ -40,15 +40,15 @@ The \<If\> body must return a single JSX root element. You can even nest!
 
 ```
 <For each="fruit" of={this.props.fruits}>
-  <li key={fruit}>{fruit}</li>
+  <li key={i}>{fruit}</li>
 </For>
 ```
 
 this becomes
 
 ```
-this.props.fruits.map(function(fruit) { return (
-  <li key={fruit}>{fruit}</li>
+this.props.fruits.map(function(fruit, i) { return (
+  <li key={i}>{fruit}</li>
 )}, this)
 ```
 
